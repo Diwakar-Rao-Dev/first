@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .item {
+            list-style: none;
+            background: #333;
+        }
+
+        .item li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .item li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .item li:hover {
+            background-color: green;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            width: 180px;
+        }
+        .item li:hover .dropdown{
+            display: block;
+        }
+        .menu-item{
+            display: none;
+            position: absolute;
+            left: 180px;
+            top: 0;
+            background: #555;
+            list-style: none;
+            width: 180px;
+        } 
+        .menu-item2{
+            display: none;
+            position: absolute;
+            left: 180px;
+            top: 0;
+            background: #555;
+            list-style: none;
+            width: 180px;
+        }
+        .dropdown li:hover .menu-item{
+            display: block;
+        }
+        .dropdown li:hover .menu-item2{
+            display: block;
+        } 
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2 class="head">👻brand</h2>
+        </div>
+        <nav>
+            <ul class="item">
+                <li><a href="">home</a></li>
+                <li><a href="">service</a>
+                    <ul class="dropdown">
+                        <li><a href="#">App Development</a>
+                            <ul class="menu-item">
+                                <li><a href="#">Android</a></li>
+                                <li><a href="#">IOS</a></li>
+                                <li><a href="#">CP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Web Development</a>
+                            <ul class="menu-item2">
+                                <li><a href="#">Fronted</a></li>
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">Full Stack</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">about</a></li>
+                <li><a href="">contect</a></li>
+            </ul>
+        </nav>
+        <button class="btn"><a href="">contact now</a></button>
+    </header>
+</body>
+
+</html>

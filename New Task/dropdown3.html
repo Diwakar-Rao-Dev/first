@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: brown;
+            padding: 30px;
+            align-items: center;
+            font-size: 30px;
+        }
+        .dropdown li{
+            display: block;
+            position: relative;
+        }
+        .dropdown li a{
+            background-color: black;
+        }
+        .dropdown li a:hover .dropdown-menu{
+            display: none;
+            position: absolute;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <ul class="dropdown">
+        <li><a href="#">services</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">app Development</a>
+                <ul class="dropdown-menu1">
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">IOS</a></li>
+                    <li><a href="#">kotlin</a></li>
+                </ul>
+                </li>
+                <li><a href="#">web Development</a>
+                <ul class="dropdown-menu2">
+                    <li><a href="#">Fronted</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Full Stack</a></li>
+                </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+   </nav> 
+</body>
+</html>

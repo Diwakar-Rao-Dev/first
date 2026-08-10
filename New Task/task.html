@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color: black;
+            padding: 5px;
+            font-size: 25px;
+        }
+        .dropdown{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .dropdown li{
+            position: relative;
+        }
+        .dropdown li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .dropdown li a:hover{
+            display: none;
+            position: absolute; 
+            top: 100%;
+            left: 0%;
+            background-color: rgb(216, 42, 42);
+            list-style: none;
+            min-width: 220px;
+            z-index: 1;
+        }
+        .dropdown li:hover .dropdown-item{
+            display: block;
+        }
+        .dropdown-item li a{
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="dropdown">
+            <li><a href="#">service</a>
+            <ul class="dropdown-item">
+                <li><a href="#">app Development</a></li>
+                <li><a href="#">web Development</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

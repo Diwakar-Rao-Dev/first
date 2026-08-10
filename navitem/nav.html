@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with logo</title>
+    <style>
+        *{
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;   
+        }
+       header{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(211, 139, 88);
+        text-transform: uppercase;
+        padding: 10px;
+        align-items: center;
+        font-size: 20px;
+       }
+       ul{
+        display: flex;
+        gap: 24px;
+        list-style: none;
+       }
+       a{
+        text-decoration: none;
+        color: aliceblue;
+       }
+       a:hover{
+        background-color: rgb(70, 70, 179);
+        border-radius: 10px;
+        padding: 5px;
+       }
+       button{
+        background-color: rgb(185, 164, 164);
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>🚖motors</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./product.html">prpduct</a></li>
+                <li><a href="./service.html">services</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+            <button><a href="mailto: dk@gmail.com">dk@gmail.com</a></button>
+    </header>
+</body>
+</html>

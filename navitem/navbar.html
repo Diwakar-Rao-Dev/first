@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Danger logo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: darkolivegreen;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px;
+            align-items: center;
+            color: white;
+        }
+        .logo , h1{
+            border: black;
+            border-radius: 20px;
+        }
+        .item{
+            list-style: none;
+           display: flex;
+           gap: 24px;
+           background-color: seagreen;
+           padding: 15px;
+           border-radius: 20px;
+            
+        }
+        a{
+           text-decoration: none;
+           color: white;  
+           padding: 5px;
+           border-radius: 20px;
+        }
+        a:hover{
+            color: red;
+             background-color: chartreuse;
+        }
+        .btn{
+            background-color: seagreen;
+           padding: 15px;
+           border-radius: 20px;
+        }
+        .btn:hover{
+            background-color: rgb(10, 230, 105);
+            padding: 15px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>💀danger</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="item">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn">
+            <a href="📱tel: +91 7388865689">+91 7388865689</a>
+        </button>
+    </header>
+</body>
+</html>

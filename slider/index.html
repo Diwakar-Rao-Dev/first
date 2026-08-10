@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-container{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .slider{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            scrollbar-width: none;
+        }
+        .slider::-webkit-scrollbar{
+            display: none;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+        .slider img{
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="../photo/tiger.jpg" alt="photo">
+            <img src="../photo/photo.jpg" alt="photo1">
+            <img src="../photo/photo1.jpg" alt="photo2">
+            <img src="../photo/photo2.jpg" alt="photo3">
+            <img src="../photo/photo3.jpg" alt="photo4">
+        </div>
+    </div>
+</body>
+</html>
