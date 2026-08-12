@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: salmon;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .ram{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+        }
+        .sub-items{
+            position: absolute;
+            display: none;
+            list-style: none;
+        }
+        .ram li:hover .sub-items{
+            display: block;
+            background-color: salmon;
+            top: 100%;
+            left: 50%;
+            max-width: fit-content;
+            padding: 20px;
+        }
+        .sub-items a:hover{
+            background-color: rgb(231, 102, 88);
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(2, 49, 136);
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="ram">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Service</a>
+                <ul class="sub-items">
+                    <li><a href="#">Frontend</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Full Stack</a></li>
+                </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background: linear-gradient(130deg, red, yellow);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .logo{
+            background-color: rgb(56, 56, 112);
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        .dropdown{
+            position: relative;
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .dropdown-item{
+            position: absolute;
+            list-style: none;
+            display: none;
+        }
+        .dropdown li:hover .dropdown-item{
+            display: block;
+            top: 100%;
+            width: 48%;
+            left: 50%;
+            background-color: black;
+            padding: 20px;
+        }
+        .dropdown-item a:hover{
+            background-color: yellowgreen;
+            padding: 5px;
+            font-size: 20px
+        }
+        .sub-dropdown{
+            position: absolute;
+            display: none;
+            list-style: none;
+        }
+        .dropdown-item li:hover .sub-dropdown{
+            display: block;
+            left: 80%;
+            background-color: black;
+            width: 50%;
+            top: 20px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .btn{
+            padding: 5px 10px;
+            background-color: rgb(42, 42, 97);
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">Logo</a></div>
+        <nav class="navbar">
+            <ul class="dropdown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a>
+                <ul class="dropdown-item">
+                    <li><a href="#">Web Development</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="#">Frontend</a></li>
+                        <li><a href="#">Backend</a></li>
+                        <li><a href="#">Full stack</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">App Development</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contect</a></li>
+            </ul>
+        </nav>
+        <button class="btn">
+            <a href="tel: +91 73888*****">+91 73888*****</a>
+        </button>
+    </header>
+</body>
+</html>
