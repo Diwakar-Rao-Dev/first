@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 50px;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 200px, 200px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+
+        .box {
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+        }
+
+        #box2 {
+            background-color: saddlebrown;
+
+        }
+
+        #box3 {
+            background-color: salmon;
+        }
+
+        #box4 {
+            background-color: darkslateblue;
+        }
+
+        #box5 {
+            background-color: darkcyan;
+        }
+
+        #box6 {
+            background-color: gold;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div>Box 1</div>
-        <div>Box 2</div>
-        <div>Box 3</div>
-        <div>Box 4</div>
+        <div class="box" id="box1">radsk</div>
+        <div class="box" id="box2">dZDcawed</div>
+        <div class="box" id="box3">sDwefs</div>
+        <div class="box" id="box4">czfwdz</div>
+        <div class="box" id="box5">SFZdawd</div>
+        <div class="box" id="box6">zfsd</div>
+        <div class="box" id="box1">radsk</div>
+        <div class="box" id="box2">dZDcawed</div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100dvh;
+            display: grid;
+            grid-template-columns: 250px, 1fr;
+            grid-template-rows: 70px, 1fr, 60px;
+            grid-template-areas: "header header"
+            "aside main"
+            "footer footer";
+            gap: 20px;
+        }
+        header{
+            grid-area: header;
+            background-color: sandybrown;
+            color: orangered;
+            padding: 50px; 
+            text-align: center; 
+            font-size: 40px;        
+        }
+        aside{
+            grid-area: aside;
+            background-color: sienna;
+            color: yellow;
+            padding: 20px;
+        }
+        main{
+            grid-area: main;
+            background-color: slateblue;
+            color: white;
+            padding: 20px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: seagreen;
+            color: gainsboro;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>My Grid Web Site</h2>
+        </header>
+        <aside>
+            <h3>Our Project</h3>
+            <p>Diwakar</p>
+            <p>Rao</p>
+        </aside>
+        <main>
+            <h1>paragraph</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </main>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, est?</p>
+        </footer>
+    </div>
+</body>
+</html>

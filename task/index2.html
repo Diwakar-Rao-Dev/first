@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: seagreen;
+            padding: 20px;
+            font-size: 25px;
+        }
+        .list-item{
+            list-style: none;
+             display: flex;
+             justify-content: center;
+             gap: 25px;
+             position: relative;
+        }
+        .list-item2{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+        }
+        .list-item2{
+            display: none;
+            background-color: seagreen;
+            height: 70px;
+            top: 30px;
+            gap: 30px;
+            padding: 20px;
+        }
+        .list-item li:hover .list-item2{
+            display: block;
+            padding: 20px;
+        }
+        .list-item3{
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 30px;
+        }
+        .list-item2 li:hover .list-item3{
+            display: block;
+            padding: 20px;
+            height: 80px;
+            width: 100%px;
+            left: 80%;
+            background-color: seagreen;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            background-color: rgb(29, 156, 29);
+            color: yellow;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="list-item">
+                <li><a href="#">Feature</a>
+                <ul class="list-item2">
+                    <li><a href="#">Shopping</a>
+                    <ul class="list-item3">
+                        <li><a href="#">T-Shirt</a></li>
+                        <li><a href="#">Smartphone</a></li>
+                        <li><a href="#">Laptop</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Classified</a></li>
+                    <li><a href="#">Preimum</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Find</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

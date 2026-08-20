@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container{
+        display: grid;
+        height: 100dvh;
+        width: 100dvw;
+        border: 2px solid red;
+        grid-template-columns: repeat(auto-fit, 
+        minmax(200px, 1fr)
+        );
+        gap: 20px;
+        padding: 15px;
+    }
+    .box{
+        background-color: blue;
+        min-height: 200px;
+        min-width: 150px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="../photo/photo.jpg" alt="photos" height="200px" width="200px"></div>
+        <div class="box"><img src="../photo/photo1.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo2.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo3.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo4.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo5.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo6.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo7.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/tiger.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo1.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo4.jpg" alt="photos"></div>
+        <div class="box"><img src="../photo/photo5.jpgphotos" alt="photos"></div>
+    </div>
+</body>
+</html>
