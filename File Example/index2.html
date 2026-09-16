@@ -5,158 +5,361 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-image: url('../photo/rinku.jpeg');
-            height: 100%;
-            width: 100%;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-        }
-        .back{
-            background-color: red;
-            b
-        }
-        .mob {
-            color: white;
-        }
-
-        .logo {
-            color: white;
-        }
-
-        .list-item {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .btn {
-            background-color: red;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-
-        .para {
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10dvh;
-            padding-top: 10px;
-        }
-
-        .sec h1 {
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            font-size: 50px;
-            font-weight: 900;
-        }
-
-        .sec h2 {
-            color: yellow;
-            text-align: center;
-            font-size: 30px;
-            margin: 0;
-        }
-
-        .des {
-            color: white;
-            padding-left: 20px;
-            text-align: center;
-            padding-top: 20px;
-        }
-
-        .div {
-            padding-top: 200px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .div .btn1 {
-            background-color: red;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            border: none;
-            padding-left: 50px;
-        }
-
-        .div .btn2 {
-            color: black;
-            opacity: 50%;
-            padding: 15px 25px;
-            border-radius: 10px;
-        }
-
-        .div2 {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            color: rgb(255, 255, 255);
-            padding-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4d779c73d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-         <div class="back">R</div>
-         <div class="logo">
-           <h2>Rinku Hotel</h2>
-            GORKHAPUR,UP
+
+    <div class="photo">
+        <header>
+            <div class="logo">
+                <div class="logo2">R</div>
+                <div class="logo3">
+                    <h3>Rinku Hotel</h3>
+                    <span>GORKHAPUR,UP</span>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul class="list-item">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li class="star"><a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>Order Online</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <span>
+                <div class="logo4"><i class="fa-solid fa-gift"></i>0</div>
+                <div class="logo5"><i class="fa-regular fa-moon"></i></div>
+                <div class="logo6"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="cont"> <i class="fa-solid fa-phone"></i> +9173888*****</div>
+                <button class="btn"> <i class="fa-regular fa-calendar-days"></i> book a table</button>
+            </span>
+
+        </header>
+
+        <section class="sec">
+            
+            <div class="div-items">
+                <div class="location"> <i class="fa-solid fa-location-dot"></i> Gorkhapur,Uttar Pradesh </div>
+                <h1>Rinku Hotel</h1>
+                <h2>Taste that feel like home</h2>
+
+
+                <p class="des">Sitapur's Pure vegetarian family restaurant — paneer butter masala, dal makhani, veg dum
+                    biryani and fresh tandoori breads. Dine in, take away, or have it delivered.</p>
+
+                <div class="div">
+                    <button class="btn1"><i class="fa-solid fa-utensils"></i>View the menu<i
+                            class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn2"> <i class="fa-solid fa-phone"></i> +919999999999</i></button>
+                </div>
+                <div class="div2">
+                    <span>⭐family restaurant</span>
+                    <span>🟢100% pure veg</span>
+                    <span>Air conditioned</span>
+                    <span>Free home delivery</span>
+                </div>
+            </div>
+
+            <i id="mouse" class="fa-solid fa-computer-mouse"></i>
+
+        </section>
+
+    </div>
+
+    <section class="sec2">
+
+        <p class="para2"> <i class="fa-solid fa-person-biking"></i> Order in</p>
+        <h2 class="head">Have it delivered to your door</h2>
+        <p class="para3">Order through your usual app, or just call us directly — the food is cooked fresh either way.
+        </p>
+
+
+
+        <div class="container">
+            <i id="font" class="fa-solid fa-person-biking"></i>
+            <h3 class="head">Home delivery available</h3>
+            <p class="cont-para">Give us a call and we’ll take your order over the phone — the food comes to your door.
+            </p>
+            <button class="btn3"><i class="fa-solid fa-phone"></i>+917388866666</button>
         </div>
-        
-        <nav class="navbar">
-            <ul class="list-item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Order Online</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <br>
+        <br>
 
-        </nav>
-        <button class="btn"> book a table</button>
-    </header>
-    <section class="sec">
-        <p class="para">&#x1f4cd; Gorkhapur,Uttar Pradesh</p>
-            <h1>Rinku Hotel</h1>
-            <h2>Taste that feel like home</h2>
-            <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro esse harum molestias.
-                Obcaecati</p>
-            <div class="div">
-                <button class="btn1">View the menu</button>
-                <button class="btn2">+91999999****s</button>
-            </div>
-            <div class="div2">
-                <span>family restaurant</span>
-                <span>100% pure veg</span>
-                <span>Air conditioned</span>
-                <span>Free home delivery</span>
-            </div>
+        <button class="btn4">See all the ways to order <i class="fa-solid fa-arrow-right"></i></button>
+
     </section>
-</body>
 
-</html>
+    <section class="sec3">
+        <div class="div-items2">
+            <b>Most ordered</b>
+            <h2>What guests order most</h2>
+            <p>First time here? Any of these is a safe bet — they're what our regulars come back for.</p>
+        </div>
+
+        <div class="menu-items">
+            <div class="item1">
+                <img src="../photo/samosa.jpeg" alt="" height="200px" width="300px">
+                <h3>Crispy Samosa</h3>
+                <h3>₹60</h3>
+                <p>Two crisp pastries filled with spiced potato and peas, served with fresh mint chutney.</p>
+                <button class="div-btn1">+Add to order</button>
+            </div>
+
+            <div class="item2">
+                <img src="../photo/soyachaap.jpeg" alt="" height="200px" width="300px">
+                <h3>Tandoori Soya Chaap </h3>
+                <h3>₹260</h3>
+                <p>Soya chaap marinated in spices and charred over charcoal in the tandoor, served with...</p>
+                <button class="div-btn1">+Add to order</button>
+            </div>
+
+            <div class="item3">
+                <img src="../photo/paneer.jpeg" alt="" height="200px" width="300px">
+                <h3>Paneer Butter Masala</h3>
+                <h3>₹300</h3>
+                <p>Soft paneer in a creamy tomato gravy finished with butter. Our single best-selling dish.</p>
+                <button class="div-btn1">+Add to order</button>
+            </div>
+
+            <div class="item4">
+                <img src="../photo/paneer.jpeg" alt="" height="200px" width="300px">
+                <h3>Paneer Tikka Masala</h3>
+                <h3>₹280</h3>
+                <p>Tandoori paneer simmered in a spiced tomato and cream gravy.</p>
+                <button class="div-btn1">+Add to order</button>
+            </div>
+
+        </div>
+
+        <button class="btn5">See the full menu <i class="fa-solid fa-arrow-right"> </i></button>
+
+    </section>
+
+    <section class="sec4">
+        <p class="para4">Why Rinku Hotel</p>
+
+        <h2>Why guests keep coming back</h2>
+
+        <div class="main-div">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Fresh every day</h3>
+                <p>Vegetables and spices come from the market each morning. We don't serve yesterday's food today.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                <h3>Home-style cooking</h3>
+                <p>The same recipes our families have always used — not too oily, not overloaded with spice.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fa-brands fa-google-scholar"></i></div>
+                <h3>A clean kitchen</h3>
+                <p>You're welcome to look inside. The kitchen is pure vegetarian — no meat, fish or eggs are cooked here
+                    at
+                    all.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                <h3>Served quickly</h3>
+                <p>Most dishes reach the table in 15–20 minutes. In a hurry? Call ahead and we'll have it ready.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec5">
+
+
+        <span>Today's offers</span>
+
+        <h2>Combo deals and family packs</h2>
+
+        <p class="para5">Biryani combos, family thalis and weekend specials — a full meal for the whole family at a
+            better price.</p>
+
+        <button class="btn6"> % See all offers <i class="fa-solid fa-arrow-right"> </i> </button>
+
+
+    </section>
+
+    <section class="sec6">
+
+
+        <div class="main">
+            <p class="head1">TESTIMONIALS</p>
+
+            <h2>What our guests say</h2>
+
+            <p class="head2"><b>4.7</b>out of 5•3 reviews</p>
+        </div>
+        <div class="main-div2">
+            <div class="form">
+                <form>
+                    <h3> <i class="fa-regular fa-share-from-square"></i> Leave a Review</h3>
+                    <p>Your Rating</p>
+                    <span class="span-icon">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <br>
+
+                    <label for="name">Your Name</label>
+                    <br>
+                    <input class="int" type="text" name="name" id="name" placeholder="Enter your name">
+                    <br>
+                    <label for="aria">Your Review</label>
+                    <br>
+                    <textarea name="address" id="aria" rows="4" placeholder="Share your experience"></textarea>
+                    <br>
+                    <button class="form-btn"> <i class="fa-brands fa-telegram"></i> Submit Review</button>
+                </form>
+            </div>
+            <div class="main-div3">
+                <span class="span1">
+                    <div class="div-logo">P</div>
+                    <div class="div-logo2">
+                        <h3>Priya Sharma</h3>
+                        <span>15 days ago</span>
+
+                        <p>Absolutely love the paneer butter masala here! The flavors are authentic and remind me of
+                            my
+                            grandmother's cooking. The staff is incredibly friendly and the ambiance is perfect for
+                            family
+                            dinners.</p>
+                    </div>
+                </span>
+
+                <span class="span2">
+                    <div class="div-logo">R</div>
+                    <div class="div-logo2">
+                        <h3>Rahul Patel</h3>
+                        <span>18 days ago</span>
+
+                        <p>Great biryani with perfect spices. The portion sizes are generous and the prices are
+                            reasonable. Will
+                            definitely come back for more!</p>
+                    </div>
+                </span>
+
+
+
+                <span class="span3">
+                    <div class="div-logo">A</div>
+                    <div class="div-logo2">
+                        <h3>Anila Desai</h3>
+                        <span>20 days ago</span>
+
+                        <p>The best Indian restaurant in town! Tried the paneer tikka and dal makhani - both were
+                            exceptional. The gulab jamun for dessert was the perfect ending to a wonderful meal.</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec7">
+
+
+        <div class="div-content">
+            <h2>Where we deliver in Sitapur</h2>
+            <p class="para6">We bring hot food to these parts of the city and the surrounding areas. Don't see your
+                neighbourhood?
+                Give us a call — more often than not we can still get to you.</p>
+            <div class="content2">
+                <span>Lal Bagh</span>
+                <span>Civil Lines</span>
+                <span>Station Road</span>
+                <span>Bara Chauraha</span>
+                <br>
+                <span>Khairabad Road</span>
+                <span>Arya Nagar</span>
+                <span>Mahmudabad Road</span>
+                <br>
+                <span>Naimisharanya Road</span>
+
+            </div>
+
+            <p>Easy to find — we’re near Sitapur Railway Station and District Hospital.</p>
+
+            <button>+919999977777</button>
+            <button>Get Direction</button>
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </section>
+
+    <section class="sec8">
+
+
+        <div class="div-item1">
+            <h2>Come and see us</h2>
+            <p>Open daily 10:00 AM – 10:30 PM (Fri & Sat until 11:00 PM)</p>
+        </div>
+
+        <div class="div-items2">
+            <button class="btnnn">Call Now</button>
+            <button>Direction & Hours</button>
+        </div>
+
+
+    </section>
+
+    <section>
+
+
+        <div class="">
+            <div>R</div>
+            <div>Rinku Hotel</div>
+            <p>Sitapur’s Pure vegetarian family restaurant for freshly cooked North Indian food. Dine in, take away, or
+                order home delivery.</p>
+        </div>
+
+        <div class="">
+            <h2>Quick links</h2>
+            <a href="">Menu & prices</a>
+            <a href="">Order online</a>
+            <a href="">Book a table</a>
+            <a href="">Today's offers</a>
+            <a href="">Gallery</a>
+            <a href="">About us</a>
+            <a href="">FAQs</a>
+            <a href="">Contact</a>
+        </div>
+
+        <div class="">
+            <h2>Visit us</h2>
+            <a href="">Main Road, Near Bara Chauraha, Sitapur, Uttar Pradesh 261001 Get directions →</a>
+            <a href="+91 98765 43210"></a>
+            <p>Message us on WhatsApp</p>
+            <p>Open daily 10:00 AM – 10:30 PM (Fri & Sat until 11:00 PM)</p>
+        </div>
+
+        <div class="">
+            <h2>Delivery areas</h2>
+            <p>We deliver across Sitapur, including:</p>
+            <span>
+
+            </span>
+            <p>Near Sitapur Railway Station and District Hospital. Don’t see your area? Give us a call — we usually can.</p>
+        </div>
+
+
+    </section>

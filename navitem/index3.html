@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(247, 246, 246);
+            padding: 10px;
+        }
+
+        .list-item1 {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+        }
+
+        a {
+            color: rgb(26, 25, 25);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+            transform: scaleX(left);
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1.9;
+        }
+
+        .container video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        h1 {
+            color: white;
+            padding: 10px;
+        }
+
+        .para {
+            color: white;
+            height: 200px;
+            width: 450px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: -50px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .btn1 {
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-top: -90px;
+            background-color: salmon;
+        }
+
+        .btn2 {
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: seagreen;
+        }
+
+        .sec3 {
+            background-color: black;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div-first span {
+            color: white;
+            border: 1px solid black;
+            background-color: slateblue;
+            border-radius: 40px 35px;
+        }
+
+        .div-first2 a {
+            color: white;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="list-item1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="container">
+
+        <video loop autoplay muted>
+            <source src="../video/istockphoto-2235533645-640_adpp_is.mp4">
+        </video>
+
+
+        <div class="div-content">
+            <h1>Diwakar Rao</h1>
+            <div>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit enim numquam
+                    cum similique
+                    cumque quam corrupti impedit debitis ut? Quisquam voluptatum corrupti facilis odio sit nulla
+                    repellendus
+                    aperiam ipsum.</p>
+                <button class="btn1">Contect now</button>
+                <button class="btn2">Register</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec3">
+
+
+        <div class="div-first">
+            <span>&copy;</span>
+            <span>2026</span>
+        </div>
+
+
+        <div class="div-first">
+            <span>Gorkhapur</span>
+        </div>
+
+
+        <div class="div-first2">
+            <ul>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">your suggetion</a></li>
+                <li><a href="#"> feedback</a></li>
+            </ul>
+        </div>
+
+
+    </section>
+</body>
+
+</html>

@@ -50,6 +50,7 @@
         }
 
         .content .navbar .list-item {
+            position: relative;
             list-style: none;
             display: flex;
             justify-content: center;
@@ -62,13 +63,36 @@
             padding: 5px 15px;
             border-radius: 15px;
         }
-
+        .list-item2{
+            position: absolute;
+            display: none;
+            list-style: none;
+            padding: 5px;
+        }
+        .list-item2 li:hover{
+            background-color: yellow;
+        }
+        .list-item2 li a:hover{
+            color: black;    
+        }
+        .list-item li:hover .list-item2{
+            display: block;
+        }
+        .list-item3{
+             position: absolute;
+            display: none;
+            list-style: none;
+        }
+        .list-item2 li:hover .list-item3{
+            display: block;
+            left: 130px;
+        }
         a {
             text-decoration: none;
             color: white;
         }
 
-        .logo h1{
+        .logo h1 {
             color: white;
             background-color: seagreen;
             border-color: white;
@@ -84,8 +108,10 @@
             font-size: 10px;
         }
 
-        h2 {
-            color: salmon;
+        .para {
+            padding-top: 150px;
+            color: white;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -104,7 +130,18 @@
                     <ul class="list-item">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="./service.html">Service</a></li>
+                        <li><a href="./service.html">Service</a>
+                            <ul class="list-item2">
+                                <li><a href="#">web Development</a>
+                                <ul class="list-item3">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JS</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="#">app Development</a></li>
+                            </ul>
+                        </li>
                         <li><a href="./contect">Contect</a></li>
                     </ul>
                 </nav>
@@ -113,10 +150,12 @@
             <br>
             <br>
             <br>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta excepturi rem, illum, voluptatem soluta
+            <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta excepturi rem, illum, voluptatem soluta
                 impedit culpa odio ipsa mollitia totam expedita quibusdam ducimus rerum eveniet sint recusandae,
                 similique nemo et.
-            </h2>
+            
+            </p>
         </div>
     </div>
 </body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: tomato;
+            color: white;
+        }
+
+        @media (max-width: 300px) {
+            .container {
+                background-color: brown;
+                color: yellow;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .container {
+                background-color: turquoise;
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime quod hic blanditiis velit
+            quisquam, sapiente tenetur. Distinctio, dolores perspiciatis saepe autem delectus sequi sapiente recusandae,
+            vitae eos beatae repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe animi non ut
+            numquam ullam odit placeat atque fuga et vel nobis distinctio perferendis similique, obcaecati iusto
+            deserunt necessitatibus odio. Illum.</p>
+    </div>
+</body>
+
+</html>

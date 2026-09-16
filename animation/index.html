@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       .navbar{
+        background-color: slateblue;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+       }
+       ul{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+       }
+       li{
+        background-color: salmon;
+        padding: 8px 17px;
+        border-radius: 10px;
+       }
+       .navbar-item li a{
+        position: relative;
+       }
+       .navbar-item li a::after{
+        position: absolute;
+        left: 0;
+        content: '';
+        bottom: -5px;
+        width: 0;
+        height: 3px;
+        transition: width 0.4s ease;
+        background-color: rgb(36, 19, 190);
+       }
+       .navbar-item li a:hover::after{
+         width: 100%;
+       }  
+       a{
+        text-decoration: none;
+        color: white;
+       }
+       li:hover{
+        transform: translateY(-5px);
+       }
+       .btn{
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: seagreen;
+        color: white;
+       }
+       .btn:hover{
+        transform: translateY(-5px);
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-item">
+            <li><a href="#">home </a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">portfolio</a></li>
+        </ul>
+        <button class="btn">contact</button>
+    </nav>
+
+    <section>
+       
+        <details name="faq">
+            <summary>sjkajfjsjfjask</summary>
+            <p>skakjfiashfishfizhcih</p>
+        </details>
+        <details name="faq">
+            <summary>sjkajfjsjfjask</summary>
+            <p>skakjfiashfishfizhcih</p>
+        </details>
+        <details name="faq">
+            <summary>sjkajfjsjfjask</summary>
+            <p>skakjfiashfishfizhcih</p>
+        </details>
+        <details name="faq">
+            <summary>sjkajfjsjfjask</summary>
+            <p>skakjfiashfishfizhcih</p>
+        </details>
+    </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list-item a{
+            position: relative;
+        }
+        .list-item a::after{
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            content: '';
+            bottom: -4px;
+            transition: width 0.3s ease;
+            background-color: black;
+        }
+        .list-item a:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="list-item">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.wrapper{
+            display: flex;
+            background: #111;
+            height: 250px;
+            width: 250px;
+            gap: 5px;
+        }
+        .wrapper.card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            height: 100%;
+            overflow: hidden;
+            background: #111;
+            border: 1px solid #fff;
+            transition: flex 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .card p{
+            min-width: 13rem;
+            text-transform: uppercase;
+            color: #fff;
+            transform: rotate(-90deg);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover{
+            flex: 4;
+        }
+        .card:hover p{
+            transform: rotate(0deg);
+        }

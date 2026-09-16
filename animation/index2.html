@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head{
+            background-color: black;
+            padding: 15px;
+        }
+        .list-item{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        a{   
+            color: white;
+            text-decoration: none;
+        }
+        .list-item li a{
+            position: relative;
+        }
+        .list-item li a::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: rgb(150, 26, 26);
+            transition: width 0.3s ease;
+        }
+        .list-item li a:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <nav class="navbar">
+            <ul class="list-item">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
