@@ -5,55 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .container{
             display: flex;
             justify-content: space-evenly;
             gap: 20px;
-        }
-        
-        .box{
-            height: 200px;
-            width: 150px;
-            background-color: rgb(112, 156, 199);
-            animation: movebox 8s infinite;
-        }
-        @keyframes moveBox {
-            from {
-                transition: translateY(0);
-            }
-            to {
-                transform: translateY(-400px);
-            }
+            padding: 20px;
         }
         .box1{
-            height: 200px;
+            height: 150px;
             width: 150px;
-            background-color: skyblue;
-            animation: movebox1 8s infinite;
+            background-color: salmon;
+            border-radius: 10px;
+            animation: moveBox1 9s infinite;
         }
-        @keyframes moveBox1 {
+         @keyframes moveBox1 {
             from {
                 transition: translateY(0);
             }
             to {
-                transform: translateY(-400px);
+                transform: translateY(450px);
             }
         }
         .box2{
-            height: 200px;
+            height: 150px;
             width: 150px;
-            background-color: sandybrown;
-            animation: movebox2 8s infinite;
+            margin-top: 46%;
+            background-color: slateblue;
+            border-radius: 10px;
+            animation: moveBox2 9s infinite;
         }
-        @keyframes moveBox2 {
+         @keyframes moveBox2 {
             from {
                 transition: translateY(0);
             }
             to {
-                transform: translateY(-400px);
+                transform: translateY(-450px);
             }
         }
-
+        .box3{
+            height: 150px;
+            width: 150px;
+            background-color: seagreen;
+            border-radius: 10px;
+            animation: moveBox3 9s infinite;
+        }
+        @keyframes moveBox3 {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(500px);
+            }
+        }
     </style>
 </head>
 <body>
