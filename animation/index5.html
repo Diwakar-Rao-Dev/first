@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button:hover{
+        /* button:hover{
             transform: translateX(5px);
             transform: translateX(-5px);
             transform: translateY(4px);
             transform: translateY(-4px);
-        }
+        } */
         .box{
             background-color: red;
             height: 50px;
             width: 50px;
+            animation: moveBox 4s infinite;
         }
-        @keyframes move{
-            form{
+        @keyframes moveBox {
+            from {
                 transition: translateX(0);
             }
-            to{
-                transform: translateX(30px);
+            to {
+                transform: translateX(400px);
             }
         }
     </style>
