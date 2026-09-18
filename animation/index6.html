@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+        
+        .box{
+            height: 200px;
+            width: 150px;
+            background-color: rgb(112, 156, 199);
+            animation: movebox 8s infinite;
+        }
+        @keyframes moveBox {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(-400px);
+            }
+        }
+        .box1{
+            height: 200px;
+            width: 150px;
+            background-color: skyblue;
+            animation: movebox1 8s infinite;
+        }
+        @keyframes moveBox1 {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(-400px);
+            }
+        }
+        .box2{
+            height: 200px;
+            width: 150px;
+            background-color: sandybrown;
+            animation: movebox2 8s infinite;
+        }
+        @keyframes moveBox2 {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(-400px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
