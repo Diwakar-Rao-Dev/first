@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* button:hover{
-            transform: translateX(5px);
-            transform: translateX(-5px);
-            transform: translateY(4px);
-            transform: translateY(-4px);
-        } */
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
         .box1{
             background-color: red;
-            height: 50px;
-            width: 50px;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
             animation: moveBox1 9s infinite;
         }
         @keyframes moveBox1 {
@@ -25,12 +24,61 @@
                 transform: translateY(400px);
             }
         }
-    </style>
+        .box2{
+            background-color: red;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            animation: moveBox2 9s infinite;
+        }
+        @keyframes moveBox2 {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(400px);
+            }
+        }
+        .box3{
+            background-color: red;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            animation: moveBox3 9s infinite;
+        }
+        @keyframes moveBox3 {
+            from {
+                transition: translateY(0);
+            }
+            to {
+                transform: translateY(400px);
+            }
+        }
+        .btn1{
+            padding: 25px 200px;
+            font-size: 20px;
+            margin-top: 320px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            animation: movebtn1 3s infinite;
+        }
+        @keyframes movebtn1{
+            from{
+                transition: translate(0);
+            }
+            to{
+                transform: translateX(400px);
+            }
+        }
+        </style>
 </head>
 <body>
-    <button>html</button>
-    <div class="box1">
-
+    <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
     </div>
+    <button class="btn1">submit</button>
 </body>
 </html>
